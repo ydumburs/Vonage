@@ -18,5 +18,8 @@ If you don't have a Heroku account, you'll need to sign up. See detail from here
 
 If you want to try hardcoded authentication, grab your credentials from your TokBox Account (https://tokbox.com/account) and replace YOUR_API_KEY, YOUR_SESSION_ID, and YOUR_TOKEN with them. Do not forget to comment out the fetchSessionConnectionData() method where using Heroku authentication and uncomment the requestPermissions() method.
 
+If you want to use a PHP server (https://github.com/opentok/learning-opentok-php) to get credentials instead of the Heroku, replace URL in the fetchSessionConnectionData() method with your localhost address like http://10.0.2.2:8080.
+
+
 # Disclaimer
 This example is provided AS IS. Use it as your own risk.
