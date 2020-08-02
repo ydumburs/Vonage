@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity
         implements  Session.SessionListener,
         PublisherKit.PublisherListener {
 
-    // If you want to hardcode your authentication, use here
+// If you want to hardcode your authentication, use here
 //    private static String API_KEY = "YOUR_API_KEY";
 //    private static String SESSION_ID = "YOUR_SESSION_ID";
 //    private static String TOKEN = "YOUR_TOKEN";
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity
     private Publisher mPublisher;
     private Subscriber mSubscriber;
     private boolean flagVideo = true;
-    private boolean flagAudio = true;
 
     public void fetchSessionConnectionData() {
         RequestQueue reqQueue = Volley.newRequestQueue(this);
@@ -95,11 +94,11 @@ public class MainActivity extends AppCompatActivity
                 if (flagVideo) {
                     mPublisher.setPublishVideo(false);
                     flagVideo = false;
-                    Log.v("MainActivity", "video disabled");
+                    Log.v("Video ON/OFF: ", "Video Disabled");
                 } else {
                     mPublisher.setPublishVideo(true);
-                    flagVideo = false;
-                    Log.v("MainActivity", "video enabled");
+                    flagVideo = true;
+                    Log.v("Video ON/OFF: ", "Video Enabled");
                 }
             }
         });
