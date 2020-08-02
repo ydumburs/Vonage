@@ -1,4 +1,4 @@
-package com.example.opentok1;
+package com.example.basicvideoapp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.opentok1;
+package com.example.basicvideoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity
         implements  Session.SessionListener,
         PublisherKit.PublisherListener {
 
-// If you want to hardcode your authentication, use here
+    // If you want to hardcode your authentication, use here
 //    private static String API_KEY = "YOUR_API_KEY";
 //    private static String SESSION_ID = "YOUR_SESSION_ID";
 //    private static String TOKEN = "YOUR_TOKEN";
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
     public void fetchSessionConnectionData() {
         RequestQueue reqQueue = Volley.newRequestQueue(this);
         reqQueue.add(new JsonObjectRequest(Request.Method.GET,
-                "https://YOUR_HEROKU_APP_NAME.herokuapp.com" + "/session",
+                "https://yufuji2.herokuapp.com" + "/session",
                 null, new Response.Listener<JSONObject>() {
 
             @Override
